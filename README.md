@@ -3,6 +3,10 @@ A brainfuck compiler written in python. Requires g++ and python 3
 
 Simply create a brainfuck file (*.bf) and compile it with bfc.py
 
+```bash
+usage: python bfc.py input.bf [output]
+```
+
 Eg
 
 ```bash
