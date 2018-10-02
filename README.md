@@ -12,6 +12,7 @@ python bfc.py multiplier.bf
 This will generate a binary called multiplier.
 
 Standard input and output is used by the ',' and '.' operators respectively
+
 '+' will increment the current cell
 
 '-' will decrement the current cell
