@@ -25,4 +25,4 @@ Standard input and output is used by the ',' and '.' operators respectively
 
 '<' will move the cell pointer 1 position left
 
-'[' and ']' begin and end a while loop respectively which executes while the current cell is not 0 (at the point where it reachrs a closing bracket ']'.
+'[' and ']' begin and end a while loop respectively which executes while the current cell is not 0 (at the point where it reachrs a closing bracket ']')
