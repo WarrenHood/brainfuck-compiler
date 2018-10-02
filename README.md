@@ -5,9 +5,9 @@ Simply create a brainfuck file (*.txt) and compile it with bfc.py
 
 Eg
 
-'''bash
+```bash
 python bfc.py multiplier.bf
-'''
+```
 
 This will generate a binary called multiplier.
 
