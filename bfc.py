@@ -5,9 +5,9 @@ def usage():
 if len(sys.argv) < 2:
     usage()
 infile = open(sys.argv[1],"r")
-outname = sys.argv[1].replace(".bf",".cpp")
+outname = sys.argv[1].replace(".bf","")+".cpp"
 if len(sys.argv) == 3:
-    outname = sys.argv[2]
+    outname = sys.argv[2].replace(".cpp","")+".cpp"
 bfcode = infile.read()
 bfcode = "".join([c for c in bfcode if c in "+-<>,.[]"])
 cppcode = "#include <iostream>\n#include <vector>\n"
