@@ -5,7 +5,7 @@ Simply create a brainfuck file (*.txt) and compile it with bfc.py
 
 Eg
 
-'''
+'''bash
 python bfc.py multiplier.bf
 '''
 
