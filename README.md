@@ -1,7 +1,7 @@
 # brainfuck-compiler
 A brainfuck compiler written in python. Requires g++ and python 3
 
-Simply create a brainfuck file (*.txt) and compile it with bfc.py
+Simply create a brainfuck file (*.bf) and compile it with bfc.py
 
 Eg
 
