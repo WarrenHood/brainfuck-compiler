@@ -27,7 +27,7 @@ for c in bfcode:
     elif c == ",":
         cppcode += "scanf(\"%d\",&cells[v]);"
     elif c == ".":
-        cppcode += "printf(\"%d\\n\",cells[v]);"
+        cppcode += "printf(\"%c\\n\",cells[v]);"
     elif c == "[":
         cppcode += "while(cells[v]!=0){"
     elif c == "]":
