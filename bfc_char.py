@@ -13,25 +13,25 @@ bfcode = "".join([c for c in bfcode if c in "+-<>,.[]"])
 cppcode = "#include <iostream>\n#include <vector>\n"
 cppcode += "using namespace std;\n"
 cppcode += "int main(void){\n"
-cppcode += "vector<int> cells {0};\n"
+cppcode += "vector<char> cells {0};\n"
 cppcode += "int v=0;"
 for c in bfcode:
     if c == "-":
-        cppcode += "cells[v]--;"
+        cppcode += "cells[v]--;\n"
     elif c == "+":
-        cppcode += "cells[v]++;"
+        cppcode += "cells[v]++;\n"
     elif c == ">":
-        cppcode += "v++;if(v>=cells.size())cells.push_back(0);"
+        cppcode += "v++;if(v>=cells.size())cells.push_back(0);\n"
     elif c == "<":
-        cppcode += "v--;if(v<0)v++;"
+        cppcode += "v--;if(v<0)v++;\n"
     elif c == ",":
-        cppcode += "scanf(\"%d\",&cells[v]);"
+        cppcode += "scanf(\"%d\",&cells[v]);\n"
     elif c == ".":
-        cppcode += "printf(\"%c\\n\",cells[v]);"
+        cppcode += "printf(\"%c\",cells[v]);\n"
     elif c == "[":
-        cppcode += "while(cells[v]!=0){"
+        cppcode += "while(cells[v]>0){\n"
     elif c == "]":
-        cppcode += "}"
+        cppcode += "}\n"
 
 cppcode += "}"
 infile.close()
